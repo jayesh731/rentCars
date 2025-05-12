@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="container relative mx-auto p-5 h-11">
+      <!-- Flex container -->
+      <div class="flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <img src="./asset/logo.png" alt="logo-header" />
+          <h3 class="font-semibold text-Cblue">RENTCARS</h3>
+        </div>
+        <!-- Menu -->
+        <div class="hidden flex-col lg:flex lg:flex-row space-x-5">
+          <a href="#" class="text-headerFontColor">Become a renter</a>
+          <a href="#" class="text-headerFontColor">Rental deals</a>
+          <a href="#" class="text-headerFontColor">How it work</a>
+          <a href="#" class="text-headerFontColor">Why choose us</a>
+        </div>
+        <!-- Buttons -->
+        <div class="hidden items-center space-x-7 lg:flex">
+          <button class="text-headerFontColor">Sign in</button>
+          <button
+            class="bg-buttonBg text-whiteBtn w-[125px] h-[43px] rounded-md border-black border-1"
+          >
+            Sign up
+          </button>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <!-- <div id="menuBtn" class="hamburger lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div> -->
+        <div class="lg:hidden">
+          <div id="menuBtn" class="block hamburger focus:outline-none">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-center"></span>
+            <span class="hamburger-bottom"></span>
+          </div>
+          <!-- Mobile menu -->
+          <div class="lg:hidden">
+            <div
+              id="menu"
+              class="hidden flex-col self-end items-center absolute p-8 mt-10 space-y-7 bg-white z-1001 right-6 drop-shadow-md"
+            >
+              <a href="#" class="text-headerFontColor">Become a renter</a>
+              <a href="#" class="text-headerFontColor">Rental deals</a>
+              <a href="#" class="text-headerFontColor">How it work</a>
+              <a href="#" class="text-headerFontColor">Why choose us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Landing Page -->
+    <section id="landingPage" >
+      <!-- Flex container -->
+      <div class="container mx-auto flex flex-col md:flex-row">
+        <!-- Left Container -->
+        <div class="flex flex-col space-y-10 mt-60 max-w-[407px]">
+          <h1 class="text-4xl font-semibold text-[#242424]">
+            Find, book and rent a car
+            <span class="text-Cblue relative"
+              >Easily
+              <img
+                src="./asset/mark.png"
+                alt="mark_img"
+                class="absolute right-0"
+              />
+            </span>
+          </h1>
+          <p class="text-paragraph">
+            Get a car wherever and whenever you need it with your IOS and
+            Android device.
+          </p>
+          <!-- Download Button Container -->
+          <div class="flex space-x-3">
+            <img src="./asset/google_play.png" alt="google_play_logo" />
+            <img src="./asset/app_store.png" alt="app_store_logo" />
+          </div>
+        </div>
+
+        <!-- Right Container -->
+        <div class="2xl:container">
+          <img
+            src="./asset/landingPage_img.png"
+            alt="car_img"
+            class="absolute top-[182px] left-[649px] z-100 2xl:right-0 "
+          />
+          <!-- Background image of car  -->
+          <img
+            src="./asset/Frame.png"
+            alt="frame img"
+            height="866px"
+            width="806px"
+            class="absolute top-0 left-[866px] w-[806px] h-[866px] z-1 2xl:right-0"
+          />
+        </div>
+      </div>
+
+      <!-- Landing Page Footer -->
+                <section id="landingFooter" class="container relative mt-[201px] pr-5 mx-auto h-11 z-1001 ">
+                    <!-- Flex container -->
+                    <div class="flex p-3 pl-8 justify-between bg-white z-1000 shadow-lFooter rounded-xl">
+                        <!-- Location -->
+                        <div class="flex space-x-2 cursor-pointer">
+                            <img src="./asset/location.png" alt="" class="w-8 h-8">
+                            <div>
+                                <p class="text-[#3E3E3E]">Location</p>
+                                <p class="text-[#B6B6B6]">Search your location</p>
+                            </div>
+
+                        </div>
+                        <!-- Pickup date -->
+                        <div class="flex space-x-2 cursor-pointer">
+                            <img src="./asset/calendar.png" alt="" class="w-8 h-8">
+                            <div>
+                                <p class="text-[#3E3E3E]">Pickup date</p>
+                                <p class="text-[#B6B6B6]">Tue 15 Feb, 09:00</p>
+                            </div>
+                        </div>
+                        <!-- Return date -->
+                        <div class="flex space-x-2 cursor-pointer">
+                            <img src="./asset/calendar.png" alt="" class="w-8 h-8">
+                            <div>
+                                <p class="text-[#3E3E3E]">Return date</p>
+                                <p class="text-[#B6B6B6]">Thu 16 Feb, 11:00</p>
+                            </div>
+                        </div>
+                        <!-- button -->
+                        <button
+                            class="bg-buttonBg text-whiteBtn w-[125px] h-[43px] rounded-md cursor-pointer">Search</button>
+                    </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- How it Works section -->
+     <section id="howItWork" class="h-screen">
+        <!-- Flex container -->
+         <div class="container mx-auto mt-28 flex flex-col align-center justify-between text-center">
+            <!-- button -->
+             <div class="bg-[#ECF5FF] w-[161px] px-4 py-8 text-Cblue">
+                <button>HOW IT WORK</button>
+             </div>
+             <h1 class="max-w-[637px] text-4xl font-medium text-[#333333]">Rent with following 3 working steps</h1>
+         </div>
+     </section>
+
+    <!-- Link js -->
+    <script src="./script.js"></script>
+  </body>
+</html>

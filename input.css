@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+    --font-display: "Poppins", sans-serif;
+    --color-headerFontColor: rgba(72, 72, 72, 1);
+    --color-buttonBg: rgba(21, 114, 211, 1);
+    --color-whiteBtn: #FFFFFF;
+    --color-paragraph: rgba(39, 39, 39, 1);
+    --color-Cblue: #1572D3;
+    --shadow-lFooter: 0px 6px 12px rgba(19, 94, 172, 0.12);
+    --breakpoint-big: 1440px;
+    --breakpoint-ExtraBig: 1800px;
+}
+
+
+/* hamburger */
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    right: 0;
+}
+
+.hamburger-top,
+.hamburger-center,
+.hamburger-bottom {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: black;
+    gap: 5px;
+}
+
+.hamburger-center {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
