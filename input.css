@@ -7,9 +7,12 @@
     --color-whiteBtn: #FFFFFF;
     --color-paragraph: rgba(39, 39, 39, 1);
     --color-Cblue: #1572D3;
+    --color-fillBg: #ECF5FF;
+    --color-black: #000000;
     --shadow-lFooter: 0px 6px 12px rgba(19, 94, 172, 0.12);
     --breakpoint-big: 1440px;
-    --breakpoint-ExtraBig: 1800px;
+    --breakpoint-ExtraBig: 1900px;
+    --breakpoint-sm2: 950px;
 }
 
 
