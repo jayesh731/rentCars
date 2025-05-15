@@ -8,7 +8,8 @@
   <link href="./output.css" rel="stylesheet" />
   <!-- font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <!-- icon -->
+  <script src="https://kit.fontawesome.com/990ff5ad1c.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="overflow-x-hidden font-[Poppins]">
@@ -35,28 +36,52 @@
           Sign up
         </button>
       </div>
-
-      <!-- Hamburger Menu -->
+      <!-- Hamburger icon -->
       <div class="lg:hidden">
-        <div id="menuBtn" class="block hamburger focus:outline-none">
+        <div id="openMenuBtn" class="block hamburger focus:outline-none">
           <span class="hamburger-top"></span>
           <span class="hamburger-center"></span>
           <span class="hamburger-bottom"></span>
-          <!-- Mobile menu -->
-          <div class="lg:hidden">
-            <div id="menu"
-              class="hidden flex-col self-end items-center absolute p-8 mt-5 space-y-7 bg-white z-1001 right-0 w-60 drop-shadow-md">
-              <a href="#" class="text-headerFontColor">Become a renter</a>
-              <a href="#" class="text-headerFontColor">Rental deals</a>
-              <a href="" class="text-headerFontColor">How it work</a>
-              <a href="#" class="text-headerFontColor">Why choose us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile nav -->
+    <div id="menu1" class="hidden lg:hidden fixed inset-0 bg-white z-20000">
+      <!-- Navbar -->
+      <nav class="container relative mx-auto p-5 md:px-20 lg:px-15 xl:px-5 h-11">
+        <!-- Flex container -->
+        <div class="flex justify-between items-center">
+          <!-- Logo -->
+          <div class="flex items-center gap-2">
+            <img src="./asset/logo.png" alt="logo-header" />
+            <h3 class="font-semibold text-Cblue">RENTCARS</h3>
+          </div>
+
+          <!-- Hamburger close icon -->
+          <div>
+            <div id="closeMenuBtn" class="block focus:outline-none">
+              <i class="fa-solid fa-x"></i>
             </div>
           </div>
         </div>
+        <div class="flex w-full flex-col items-center absolute p-8 mt-5 space-y-7 right-0 drop-shadow-md">
+          <a href="#" class="text-headerFontColor">Become a renter</a>
+          <a href="#" class="text-headerFontColor">Rental deals</a>
+          <a href="#" class="text-headerFontColor">How it work</a>
+          <a href="#" class="text-headerFontColor">Why choose us</a>
+          <!-- Buttons -->
+          <div class="items-center mt-10 space-x-7 lg:hidden">
+            <button class="text-headerFontColor">Sign in</button>
+            <button class="bg-buttonBg text-whiteBtn w-[125px] h-[43px] rounded-md border-black border-1">
+              Sign up
+            </button>
+          </div>
+        </div>
 
-
-      </div>
+      </nav>
     </div>
+
   </nav>
 
   <!-- Landing Page -->
@@ -96,7 +121,7 @@
 
       <!-- Landing Page Footer -->
       <section id="landingFooter"
-        class="hidden md:block px-5 md:px-15 xl:p-0 mt-18 mb-12 relative lg:mt-[201px] container mx-auto h-11 z-1001 ">
+        class="hidden md:block px-5 md:px-15 xl:p-0 mt-18 mb-12 relative lg:mt-[201px] container mx-auto z-1001 ">
         <!-- Flex container -->
         <div class="flex p-3 pl-8 justify-between bg-white z-1000 shadow-lFooter rounded-xl ">
           <!-- Location -->
@@ -246,7 +271,8 @@
               <button class="font-semibold ">WHY CHOOSE US</button>
             </div>
             <!-- Title -->
-            <h1 class="w-full md:max-w-[637px] text-xl md:text-4xl font-medium text-[#333333] mx-auto mb-[56px] max-lg:text-center">
+            <h1
+              class="w-full md:max-w-[637px] text-xl md:text-4xl font-medium text-[#333333] mx-auto mb-[56px] max-lg:text-center">
               We offer the best experience with our rental deals
             </h1>
             <!-- items Container -->
@@ -342,7 +368,8 @@
               <h5 class="text-populatTitle font-medium">Jaguar XE L P250</h5>
               <div class="flex items-center space-x-1 mt-[12px]">
                 <img src="./asset/Most Popular/Star 1.png" alt="start img" class="h-4 w-4">
-                <p class="text-[12px] font-medium">4.8 <span class="text-popularLight font-light">(2.436 reviews)</span>
+                <p class="text-[12px] font-medium">4.8 <span class="text-popularLight font-light">(2.436
+                    reviews)</span>
                 </p>
               </div>
               <!-- grid -->
@@ -407,7 +434,8 @@
               <h5 class="text-populatTitle font-medium">Audi R8</h5>
               <div class="flex items-center space-x-1 mt-[12px]">
                 <img src="./asset/Most Popular/Star 1.png" alt="start img" class="h-4 w-4">
-                <p class="text-[12px] font-medium">4.6<span class="text-popularLight font-light">(1.936 reviews)</span>
+                <p class="text-[12px] font-medium">4.6<span class="text-popularLight font-light">(1.936
+                    reviews)</span>
                 </p>
               </div>
               <!-- grid -->
@@ -472,7 +500,8 @@
               <h5 class="text-populatTitle font-medium">BMW M3</h5>
               <div class="flex items-center space-x-1 mt-[12px]">
                 <img src="./asset/Most Popular/Star 1.png" alt="start img" class="h-4 w-4">
-                <p class="text-[12px] font-medium">4.5<span class="text-popularLight font-light">(2.036 reviews)</span>
+                <p class="text-[12px] font-medium">4.5<span class="text-popularLight font-light">(2.036
+                    reviews)</span>
                 </p>
               </div>
               <!-- grid -->
@@ -537,7 +566,8 @@
               <h5 class="text-populatTitle font-medium">Lamborghini Huracan</h5>
               <div class="flex items-center space-x-1 mt-[12px]">
                 <img src="./asset/Most Popular/Star 1.png" alt="start img" class="h-4 w-4">
-                <p class="text-[12px] font-medium">4.3<span class="text-popularLight font-light">(2.236 reviews)</span>
+                <p class="text-[12px] font-medium">4.3<span class="text-popularLight font-light">(2.236
+                    reviews)</span>
                 </p>
               </div>
               <!-- grid -->
@@ -653,7 +683,8 @@
               </div>
               <!-- paragraph -->
               <div class="mt-12 max-lg:mb-4 max-sm:mb-5">
-                <p>“I feel very secure when using caretall's services. Your customer care team is very enthusiastic and
+                <p>“I feel very secure when using caretall's services. Your customer care team is very enthusiastic
+                  and
                   the driver is always on time.”</p>
               </div>
               <!-- name -->
@@ -665,14 +696,16 @@
           </div>
         </div>
         <!-- quotation image -->
-        <img src="./asset/“.png" alt="quotation img" class="hidden lg:block absolute w-[292px] h-[310px] top-[90px] left-[10%]">
-        <img src="./asset/right.png" alt="quotation img" class="hidden lg:block absolute w-[292px] h-[310px] -top-[60px] right-[10%]">
+        <img src="./asset/“.png" alt="quotation img"
+          class="hidden lg:block absolute w-[292px] h-[310px] top-[90px] left-[10%]">
+        <img src="./asset/right.png" alt="quotation img"
+          class="hidden lg:block absolute w-[292px] h-[310px] -top-[60px] right-[10%]">
       </div>
     </div>
   </section>
 
   <!-- Download Section -->
-  <section id="download" >
+  <section id="download">
     <div class="2xl:container mx-auto relative overflow-hidden">
       <!-- image -->
       <img src="./asset/VectorF.png" alt="vector"

@@ -1,7 +1,11 @@
-const menuBtn = document.querySelector('#menuBtn');
-const menu = document.getElementById('menu');
+const openMenuBtn = document.getElementById('openMenuBtn');
+const closeMenuBtn = document.getElementById('closeMenuBtn');
+const menu = document.getElementById('menu1');
 
-menuBtn.addEventListener("click", () => {
-    menu.classList.toggle('flex')
-    menu.classList.toggle('hidden')
-})
+openMenuBtn.addEventListener('click', () => {
+  menu.classList.remove('hidden');
+});
+
+closeMenuBtn.addEventListener('click', () => {
+  menu.classList.add('hidden');
+});

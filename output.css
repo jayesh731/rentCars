@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-black: #000000;
     --color-white: #fff;
@@ -193,8 +194,17 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
+  }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
+  }
+  .inset-1 {
+    inset: calc(var(--spacing) * 1);
   }
   .-top-\[20\%\] {
     top: calc(20% * -1);
@@ -267,6 +277,12 @@
   }
   .z-1001 {
     z-index: 1001;
+  }
+  .z-2000 {
+    z-index: 2000;
+  }
+  .z-20000 {
+    z-index: 20000;
   }
   .col-start-1 {
     grid-column-start: 1;
@@ -748,6 +764,9 @@
   .border-popularBtn {
     border-color: var(--color-popularBtn);
   }
+  .bg-Cblue {
+    background-color: var(--color-Cblue);
+  }
   .bg-\[\#051C34\] {
     background-color: #051C34;
   }
@@ -759,6 +778,9 @@
   }
   .bg-\[\#F7FBFF\] {
     background-color: #F7FBFF;
+  }
+  .bg-amber-200 {
+    background-color: var(--color-amber-200);
   }
   .bg-buttonBg {
     background-color: var(--color-buttonBg);
@@ -954,6 +976,9 @@
   }
   .text-populatTitle {
     color: var(--color-populatTitle);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .text-whiteBtn {
     color: var(--color-whiteBtn);
