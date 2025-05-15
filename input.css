@@ -1,7 +1,9 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 @theme {
-    --font-display: "Poppins", sans-serif;
+    --font-display: "Poppins", "sans-serif";
     --color-headerFontColor: rgba(72, 72, 72, 1);
     --color-buttonBg: rgba(21, 114, 211, 1);
     --color-whiteBtn: #FFFFFF;
@@ -9,10 +11,16 @@
     --color-Cblue: #1572D3;
     --color-fillBg: #ECF5FF;
     --color-black: #000000;
+    --color-fTextColor: #D6D6D6;
+    --color-populatTitle: rgba(38, 38, 38, 1);
+    --color-popularLight: rgba(128, 128, 128, 1);
+    --color-popularBtn: rgba(78, 78, 78, 1);
+    --shadow-popularS: 0px 6px 12px rgba(19, 94, 172, 0.12);
     --shadow-lFooter: 0px 6px 12px rgba(19, 94, 172, 0.12);
     --breakpoint-big: 1440px;
     --breakpoint-ExtraBig: 1900px;
     --breakpoint-sm2: 950px;
+
 }
 
 
@@ -45,3 +53,18 @@
 .hamburger-bottom {
     transform: translateY(14px);
 }
+
+
+/* Slider */
+.logo-slider {
+    animation: scroll-left 20s linear infinite;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }

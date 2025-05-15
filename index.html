@@ -6,12 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Car Rental</title>
   <link href="./output.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden font-[Poppins]">
   <!-- Navbar -->
-  <nav class="container relative mx-auto p-5 h-11">
+  <nav class="container relative mx-auto p-5 md:px-20 lg:px-15 xl:px-5 h-11">
     <!-- Flex container -->
     <div class="flex justify-between items-center">
       <!-- Logo -->
@@ -40,263 +42,757 @@
           <span class="hamburger-top"></span>
           <span class="hamburger-center"></span>
           <span class="hamburger-bottom"></span>
-        </div>
-        <!-- Mobile menu -->
-        <div class="lg:hidden">
-          <div id="menu"
-            class="hidden flex-col self-end items-center absolute p-8 mt-10 space-y-7 bg-white z-1001 right-6 drop-shadow-md">
-            <a href="#" class="text-headerFontColor">Become a renter</a>
-            <a href="#" class="text-headerFontColor">Rental deals</a>
-            <a href="howItWork" class="text-headerFontColor">How it work</a>
-            <a href="#" class="text-headerFontColor">Why choose us</a>
+          <!-- Mobile menu -->
+          <div class="lg:hidden">
+            <div id="menu"
+              class="hidden flex-col self-end items-center absolute p-8 mt-5 space-y-7 bg-white z-1001 right-0 w-60 drop-shadow-md">
+              <a href="#" class="text-headerFontColor">Become a renter</a>
+              <a href="#" class="text-headerFontColor">Rental deals</a>
+              <a href="" class="text-headerFontColor">How it work</a>
+              <a href="#" class="text-headerFontColor">Why choose us</a>
+            </div>
           </div>
         </div>
+
+
       </div>
     </div>
   </nav>
 
   <!-- Landing Page -->
-  <section id="landingPage">
-    <!-- Flex container -->
-    <div class="container mx-auto flex flex-col-reverse px-20 lg:p-0 lg:flex-row lg:relative">
-      <!-- Left Container -->
-      <div class="flex flex-col space-y-10 mt-10 lg:mt-60 max-w-[407px]">
-        <h1 class="text-4xl font-semibold text-[#242424]">
-          Find, book and rent a car
-          <span class="text-Cblue relative">Easily
-            <img src="./asset/mark.png" alt="mark_img" class="absolute right-0" />
-          </span>
-        </h1>
-        <p class="text-paragraph">
-          Get a car wherever and whenever you need it with your IOS and
-          Android device.
-        </p>
-        <!-- Download Button Container -->
-        <div class="flex space-x-3">
-          <img src="./asset/google_play.png" alt="google_play_logo" />
-          <img src="./asset/app_store.png" alt="app_store_logo" />
-        </div>
-      </div>
-
-      <!-- Right Container -->
-      <div class="mt-[25%] lg:m-auto">
-        <img src="./asset/landingPage_img.png" alt="car_img"
-          class="lg:absolute top-[182px] left-[649px] z-100 2xl:right-0 2xl:left-auto " />
-        <!-- Background image of car  -->
-        <img src="./asset/Frame.png" alt="frame img" height="866px" width="806px"
-          class="hidden lg:block absolute top-0 left-[866px] w-[806px] h-[866px] z-1 2xl:right-0 2xl:left-auto" />
-      </div>
-    </div>
-
-    <!-- Landing Page Footer -->
-    <section id="landingFooter" class="container relative mt-[201px] pr-5 mx-auto h-11 z-1001 ">
+  <section id="landingPage" class="overflow-hidden ">
+    <!-- container -->
+    <div class="container mx-auto">
       <!-- Flex container -->
-      <div class="flex p-3 pl-8 justify-between bg-white z-1000 shadow-lFooter rounded-xl mb-15 ">
-        <!-- Location -->
-        <div class="flex space-x-2 cursor-pointer">
-          <img src="./asset/location.png" alt="" class="w-8 h-8">
-          <div>
-            <p class="text-[#3E3E3E]">Location</p>
-            <p class="text-[#B6B6B6]">Search your location</p>
+      <div class="container mx-auto flex flex-col-reverse px-5 md:px-15 xl:p-0 lg:flex-row lg:relative">
+        <!-- Left Container -->
+        <div class="flex flex-col space-y-10 mt-10 lg:mt-60 max-w-[407px]">
+          <h1 class="text-4xl font-semibold text-[#242424]">
+            Find, book and rent a car
+            <span class="text-Cblue relative">Easily
+              <img src="./asset/mark.png" alt="mark_img" class="absolute right-0" />
+            </span>
+          </h1>
+          <p class="text-paragraph">
+            Get a car wherever and whenever you need it with your IOS and
+            Android device.
+          </p>
+          <!-- Download Button Container -->
+          <div class="flex space-x-3">
+            <img src="./asset/google_play.png" alt="google_play_logo" />
+            <img src="./asset/app_store.png" alt="app_store_logo" />
           </div>
+        </div>
 
+        <!-- Right Container -->
+        <div class="mt-[25%] lg:m-auto">
+          <img src="./asset/landingPage_img.png" alt="car_img"
+            class="lg:absolute top-[182px] left-[649px] z-100 2xl:right-0 2xl:left-auto " />
+          <!-- Background image of car  -->
+          <img src="./asset/Frame.png" alt="frame img" height="866px" width="806px"
+            class="hidden lg:block absolute top-0 left-[866px] w-[806px] h-[866px] z-1 2xl:right-0 2xl:left-auto" />
         </div>
-        <!-- Pickup date -->
-        <div class="flex space-x-2 cursor-pointer">
-          <img src="./asset/calendar.png" alt="" class="w-8 h-8">
-          <div>
-            <p class="text-[#3E3E3E]">Pickup date</p>
-            <p class="text-[#B6B6B6]">Tue 15 Feb, 09:00</p>
-          </div>
-        </div>
-        <!-- Return date -->
-        <div class="flex space-x-2 cursor-pointer">
-          <img src="./asset/calendar.png" alt="" class="w-8 h-8">
-          <div>
-            <p class="text-[#3E3E3E]">Return date</p>
-            <p class="text-[#B6B6B6]">Thu 16 Feb, 11:00</p>
-          </div>
-        </div>
-        <!-- button -->
-        <button class="bg-buttonBg text-whiteBtn w-[125px] h-[43px] rounded-md cursor-pointer">Search</button>
       </div>
-      </div>
-    </section>
+
+      <!-- Landing Page Footer -->
+      <section id="landingFooter"
+        class="hidden md:block px-5 md:px-15 xl:p-0 mt-18 mb-12 relative lg:mt-[201px] container mx-auto h-11 z-1001 ">
+        <!-- Flex container -->
+        <div class="flex p-3 pl-8 justify-between bg-white z-1000 shadow-lFooter rounded-xl ">
+          <!-- Location -->
+          <div class="flex space-x-2 cursor-pointer">
+            <img src="./asset/location.png" alt="" class="w-8 h-8">
+            <div>
+              <p class="text-[#3E3E3E]">Location</p>
+              <p class="text-[#B6B6B6]">Search your location</p>
+            </div>
+
+          </div>
+          <!-- Pickup date -->
+          <div class="flex space-x-2 cursor-pointer">
+            <img src="./asset/calendar.png" alt="" class="w-8 h-8">
+            <div>
+              <p class="text-[#3E3E3E]">Pickup date</p>
+              <p class="text-[#B6B6B6]">Tue 15 Feb, 09:00</p>
+            </div>
+          </div>
+          <!-- Return date -->
+          <div class="flex space-x-2 cursor-pointer">
+            <img src="./asset/calendar.png" alt="" class="w-8 h-8">
+            <div>
+              <p class="text-[#3E3E3E]">Return date</p>
+              <p class="text-[#B6B6B6]">Thu 16 Feb, 11:00</p>
+            </div>
+          </div>
+          <!-- button -->
+          <button class="bg-buttonBg text-whiteBtn w-[125px] h-[43px] rounded-md cursor-pointer">Search</button>
+        </div>
+    </div>
+  </section>
+  </div>
+
   </section>
 
 
 
   <!-- How it Works section -->
-  <section id="howItWork" class="relative  md:top-30 lg:top-0 ">
-    <!-- Flex container -->
-    <div class="flex items-center justify-center h-screen top-[86px] ">
-      <!-- Items container -->
-      <div class="text-center 2xl:mt-200px">
-        <!-- button -->
-        <div class="bg-[#ECF5FF] inline-block px-8 py-4 text-blue-600 mx-auto rounded-xl text-center">
-          <button class="font-semibold ">HOW IT WORK</button>
-        </div>
-        <!-- Title -->
-        <h1 class="max-w-[637px] text-4xl font-medium text-[#333333] mx-auto mt-8">
-          Rent with following 3 working steps
-        </h1>
-        <!-- three card container -->
-        <div
-          class="flex flex-col space-y-6 items-center justify-center  pt-16 lg:flex-row lg:space-y-0 lg:space-x-[200px]">
-          <!-- card 1 -->
-          <div class="flex flex-col items-center space-y-[40px]">
-            <div class="w-28 h-28 bg-[#ECF5FF] rounded-xl flex justify-center items-center">
-              <img src="./asset/location-tick.png" alt="">
-            </div>
-            <!-- Text content -->
-            <div class="max-w-[165px] text-center">
-              <h3 class="text-xl text-black font-medium">Choose location</h3>
-              <p class="text-sm text-[#6D6D6D]">Choose your and find
-                your best car</p>
-            </div>
+  <section id="howItWork" class="pt-[86px]">
+    <!-- container -->
+    <div class="2xl:container 2xl:mx-auto 2xl:overflow-hidden">
+      <!-- Flex container -->
+      <div class="flex justify-center top-[86px] ">
+        <!-- Items container -->
+        <div class="text-center 2xl:mt-200px">
+          <!-- button -->
+          <div class="bg-[#ECF5FF] inline-block px-8 py-4 text-blue-600 mx-auto rounded-xl text-center">
+            <button class="font-semibold ">HOW IT WORK</button>
           </div>
-          <!-- card 2 -->
-          <div class="hidden lg:flex flex-col items-center space-y-[40px]">
-            <div class="w-28 h-28 bg-[#ECF5FF] rounded-xl flex justify-center items-center">
-              <img src="./asset/location-tick.png" alt="">
+          <!-- Title -->
+          <h1 class="max-w-[637px] text-4xl font-medium text-[#333333] mx-auto mt-8">
+            Rent with following 3 working steps
+          </h1>
+          <!-- three card container -->
+          <div
+            class="flex flex-col space-y-6 items-center justify-center  pt-16 lg:flex-row lg:space-y-0 lg:space-x-[200px]">
+            <!-- card 1 -->
+            <div class="flex flex-col items-center space-y-[40px]">
+              <div class="w-28 h-28 bg-[#ECF5FF] rounded-xl flex justify-center items-center">
+                <img src="./asset/location-tick.png" alt="">
+              </div>
+              <!-- Text content -->
+              <div class="max-w-[165px] text-center">
+                <h3 class="text-xl text-black font-medium">Choose location</h3>
+                <p class="text-sm text-[#6D6D6D]">Choose your and find
+                  your best car</p>
+              </div>
             </div>
-            <!-- Text content -->
-            <div class="max-w-[165px] text-center">
-              <h3 class="text-xl text-black font-medium">Pick-up date</h3>
-              <p class="text-sm text-[#6D6D6D]">Select your pick up date and
-                time to book your car</p>
+            <!-- card 2 -->
+            <div class="flex flex-col items-center space-y-[40px]">
+              <div class="w-28 h-28 bg-[#ECF5FF] rounded-xl flex justify-center items-center">
+                <img src="./asset/location-tick.png" alt="">
+              </div>
+              <!-- Text content -->
+              <div class="max-w-[165px] text-center">
+                <h3 class="text-xl text-black font-medium">Pick-up date</h3>
+                <p class="text-sm text-[#6D6D6D]">Select your pick up date and
+                  time to book your car</p>
+              </div>
             </div>
-          </div>
-          <!-- card 3 -->
-          <div class="hidden lg:flex flex-col items-center space-y-[40px] mb-16 lg:mb-0">
-            <div class="w-28 h-28 bg-[#ECF5FF] rounded-xl flex justify-center items-center">
-              <img src="./asset/location-tick.png" alt="">
-            </div>
-            <!-- Text content -->
-            <div class="max-w-[165px] text-center">
-              <h3 class="text-xl text-black font-medium">Book your car</h3>
-              <p class="text-sm text-[#6D6D6D]">Book your car and we will deliver
-                it directly to you</p>
+            <!-- card 3 -->
+            <div class="flex flex-col items-center space-y-[40px] lg:mb-0">
+              <div class="w-28 h-28 bg-[#ECF5FF] rounded-xl flex justify-center items-center">
+                <img src="./asset/location-tick.png" alt="">
+              </div>
+              <!-- Text content -->
+              <div class="max-w-[165px] text-center">
+                <h3 class="text-xl text-black font-medium">Book your car</h3>
+                <p class="text-sm text-[#6D6D6D]">Book your car and we will deliver
+                  it directly to you</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- How it work scoler -->
+      <!-- flex container -->
+      <div class="container mx-auto overflow-hidden">
+        <div class="flex gap-[96px] pb-[86px] mt-40 justify-between [&>*]:min-w-[224px]">
+          <div class="flex justify-center">
+            <img src="./asset/slider/Frame.png" alt="">
+          </div>
+          <div class="flex justify-center">
+            <img src="./asset/slider/Frame 24.png" alt="">
+          </div>
+          <div class="flex justify-center">
+            <img src="./asset/slider/Frame 25.png" alt="">
+          </div>
+          <div class="flex justify-center">
+            <img src="./asset/slider/Frame 26.png" alt="">
+          </div>
+          <div class="flex justify-center">
+            <img src="./asset/slider/Frame 27.png" alt="">
+          </div>
+          <div class="flex justify-center">
+            <img src="./asset/slider/Frame 28.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
 
-    <!-- How it work scoler -->
-    <!-- flex container -->
-    <div class="flex w-screen gap-[96px] absolute bottom-[86px] justify-between [&>*]:min-w-[224px]">
-      <div class="flex justify-center">
-        <img src="./asset/slider/Frame.png" alt="">
-      </div>
-      <div class="flex justify-center">
-        <img src="./asset/slider/Frame 24.png" alt="">
-      </div>
-      <div class="flex justify-center">
-        <img src="./asset/slider/Frame 25.png" alt="">
-      </div>
-      <div class="flex justify-center">
-        <img src="./asset/slider/Frame 26.png" alt="">
-      </div>
-      <div class="flex justify-center">
-        <img src="./asset/slider/Frame 27.png" alt="">
-      </div>
-      <div class="flex justify-center">
-        <img src="./asset/slider/Frame 28.png" alt="">
-      </div>
-    </div>
-    </div>
   </section>
 
   <!-- why choose us section -->
-  <section id="whyChooseUs" class="lg:h-screen overflow-hidden ">
-    <!-- Flex container -->
-    <div class="container mx-auto flex flex-col items-center lg:flex-row mt-[150px] lg:mt-[98px] relative ">
-      <!-- Left section --> 
-       <!-- prev - absolute z-100 w-[813px] h-[359px] -left-[181px] top-[230px] -->
-        <!-- prev - absolute z-1 -left-[24%] top-0 -->
-      <div class="lg:m-auto max-w-1/2 ">
-        <img src="./asset/Audi 1.png" alt="" class="lg:absolute right-[750px] top-[230px] z-100 2xl:left-0 2xl:right-auto ">
-        <img src="./asset/Vector.png" alt="" class="hidden lg:block absolute z-1 -left-[60%] lg:-right-[30%] xl:-left-[40%] 2xl:-left-[15%] top-0 ">
-      </div>
-
-      <!-- Right section -->
-      <div class="max-w-1/2 mt-20 lg:mt-0">
-        <!-- flex container -->
-        <div class="flex flex-col justify-center items-center lg:items-start max-w-[576px]">
-          <!-- button -->
-          <div class="bg-[#ECF5FF] min-w-[161px] self-start px-8 py-4 text-blue-600 mx-auto rounded-xl mb-[32px]">
-            <button class="font-semibold ">WHY CHOOSE US</button>
-          </div>
-          <!-- Title -->
-          <h1 class="max-w-[637px] text-[38px] font-medium text-[#333333] mx-auto mb-[56px]">
-            We offer the best experience with our rental deals
-          </h1>
-          <!-- items Container -->
-          <div class="space-y-[40px]">
-            <!-- item1 container -->
-            <div class="flex space-x-6 w-[63%]">
-              <!-- Icon -->
-              <div class="h-16 w-16 bg-[#ECF5FF] flex shrink-0 items-center justify-center rounded-2xl">
-                <img src="./asset/WHY CHOOSE US/wallet.png" alt="">
-              </div>
-              <!-- text content -->
-              <div class="leading-2">
-                <h3 class="text-xl text-black font-medium pt-0">Best price guaranteed</h3>
-                <p class="text-sm text-[#6D6D6D] pb-0">Find a lower price? We’ll refund you 100%
-                  of the difference.</p>
-              </div>
-            </div>
-
-            <!-- item2 container -->
-            <div class="flex space-x-6 w-[63%]">
-              <!-- Icon -->
-              <div class="h-16 w-16 bg-[#ECF5FF] flex shrink-0 items-center justify-center rounded-2xl">
-                <img src="./asset/WHY CHOOSE US/wallet.png" alt="">
-              </div>
-              <!-- text content -->
-              <div class="leading-2">
-                <h3 class="text-xl text-black font-medium pt-0">Experience driver</h3>
-                <p class="text-sm text-[#6D6D6D] pb-0">Don’t have driver? Don’t worry, we have many
-                  experienced driver for you.</p>
-              </div>
-            </div>
-
-            <!-- item3 container -->
-            <div class="flex space-x-6 w-[63%]">
-              <!-- Icon -->
-              <div class="h-16 w-16 bg-[#ECF5FF] flex shrink-0 items-center justify-center rounded-2xl">
-                <img src="./asset/WHY CHOOSE US/wallet.png" alt="">
-              </div>
-              <!-- text content -->
-              <div class="leading-2">
-                <h3 class="text-xl text-black font-medium pt-0">24 hour car delivery</h3>
-                <p class="text-sm text-[#6D6D6D] pb-0">Book your car anytime and we will deliver it
-                  directly to you.</p>
-              </div>
-            </div>
-
-            <!-- item4 container -->
-            <div class="flex space-x-6 w-[63%]">
-              <!-- Icon -->
-              <div class="h-16 w-16 bg-[#ECF5FF] flex shrink-0 items-center justify-center rounded-2xl">
-                <img src="./asset/WHY CHOOSE US/wallet.png" alt="">
-              </div>
-              <!-- text content -->
-              <div class="leading-2">
-                <h3 class="text-xl text-black font-medium pt-0">24/7 technical support</h3>
-                <p class="text-sm text-[#6D6D6D] pb-0">Have a question? Contact Rentcars support
-                  any time when you have problem.</p>
-              </div>
-            </div>
-          </div>
-
+  <section id="whyChooseUs">
+    <!-- container -->
+    <div class=" pt-[98px]">
+      <!-- Flex container -->
+      <div class="container mx-auto flex flex-col items-center lg:flex-row relative ">
+        <!-- Left section -->
+        <div class="lg:m-auto">
+          <img src="./asset/Audi 1.png" alt=""
+            class="lg:absolute right-[750px] top-[230px] z-100  2xl:left-0 2xl:right-auto ">
+          <img src="./asset/Vector.png" alt=""
+            class="absolute z-1 -left-[60%] lg:-right-[30%] xl:-left-[40%] 2xl:-left-[15%] top-0">
         </div>
 
+        <!-- Right section -->
+        <div class="lg:max-w-1/2 mt-20 lg:mt-0">
+          <!-- flex container -->
+          <div class="flex flex-col justify-center items-center lg:items-start max-w-[576px] max-lg:px-7">
+            <!-- button -->
+            <div class="bg-[#ECF5FF] min-w-[161px] self-start px-8 py-4 text-blue-600 mx-auto rounded-xl mb-[32px]">
+              <button class="font-semibold ">WHY CHOOSE US</button>
+            </div>
+            <!-- Title -->
+            <h1 class="w-full md:max-w-[637px] text-xl md:text-4xl font-medium text-[#333333] mx-auto mb-[56px] max-lg:text-center">
+              We offer the best experience with our rental deals
+            </h1>
+            <!-- items Container -->
+            <div class="space-y-[40px]">
+              <!-- item1 container -->
+              <div class="flex space-x-6 w-[100%] lg:w-[63%]">
+                <!-- Icon -->
+                <div class="h-16 w-16 bg-[#ECF5FF] flex shrink-0 items-center justify-center rounded-2xl">
+                  <img src="./asset/WHY CHOOSE US/wallet.png" alt="">
+                </div>
+                <!-- text content -->
+                <div class="leading-2">
+                  <h3 class="text-xl text-black font-medium pt-0">Best price guaranteed</h3>
+                  <p class="text-sm text-[#6D6D6D] pb-0">Find a lower price? We’ll refund you 100%
+                    of the difference.</p>
+                </div>
+              </div>
 
+              <!-- item2 container -->
+              <div class="flex space-x-6 w-[100%] lg:w-[63%]">
+                <!-- Icon -->
+                <div class="h-16 w-16 bg-[#ECF5FF] flex shrink-0 items-center justify-center rounded-2xl">
+                  <img src="./asset/WHY CHOOSE US/user-tick.png" alt="user-tick">
+                </div>
+                <!-- text content -->
+                <div class="leading-2">
+                  <h3 class="text-xl text-black font-medium pt-0">Experience driver</h3>
+                  <p class="text-sm text-[#6D6D6D] pb-0">Don’t have driver? Don’t worry, we have many
+                    experienced driver for you.</p>
+                </div>
+              </div>
+
+              <!-- item3 container -->
+              <div class="flex space-x-6 w-[100%] lg:w-[63%]">
+                <!-- Icon -->
+                <div class="h-16 w-16 bg-[#ECF5FF] flex shrink-0 items-center justify-center rounded-2xl">
+                  <img src="./asset/WHY CHOOSE US/24-support.png" alt="24-support">
+                </div>
+                <!-- text content -->
+                <div class="leading-2">
+                  <h3 class="text-xl text-black font-medium pt-0">24 hour car delivery</h3>
+                  <p class="text-sm text-[#6D6D6D] pb-0">Book your car anytime and we will deliver it
+                    directly to you.</p>
+                </div>
+              </div>
+
+              <!-- item4 container -->
+              <div class="flex space-x-6 w-[100%] lg:w-[63%]">
+                <!-- Icon -->
+                <div class="h-16 w-16 bg-[#ECF5FF] flex shrink-0 items-center justify-center rounded-2xl">
+                  <img src="./asset/WHY CHOOSE US/messages-2.png" alt="messages-2">
+                </div>
+                <!-- text content -->
+                <div class="leading-2">
+                  <h3 class="text-xl text-black font-medium pt-0">24/7 technical support</h3>
+                  <p class="text-sm text-[#6D6D6D] pb-0">Have a question? Contact Rentcars support
+                    any time when you have problem.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- POPULAR RENTAL DEALS SECTION -->
+  <section id="popularRental">
+    <!-- container -->
+    <div class="container mx-auto pt-[84px] mb-[80px]">
+      <!-- Flex container -->
+      <div class="flex flex-col items-center mt-20">
+        <!-- button -->
+        <div class="bg-[#ECF5FF] inline-block px-8 py-4 text-blue-600 mx-auto rounded-xl text-center">
+          <button class="font-semibold ">POPULAR RENTAL DEALS</button>
+        </div>
+
+        <!-- title -->
+        <h1 class="max-w-[637px] text-[38px] font-medium text-[#333333] mx-auto mt-6 text-center">
+          Most popular cars rental deals
+        </h1>
+
+        <!-- Car Card container -->
+        <div class="grid md:grid-cols-2 xl:grid-cols-4 justify-center my-16 gap-8">
+          <!-- card 1  -->
+          <div class="flex flex-col w-[256px] py-[26px] px-6 shadow-lFooter rounded-xl">
+            <!-- image container -->
+            <div class="min-h-[104px] flex items-end">
+              <img src="./asset/Most Popular/image 12.png" alt="jaguat img">
+            </div>
+            <!-- Text container -->
+            <div class="mt-[25px]">
+              <h5 class="text-populatTitle font-medium">Jaguar XE L P250</h5>
+              <div class="flex items-center space-x-1 mt-[12px]">
+                <img src="./asset/Most Popular/Star 1.png" alt="start img" class="h-4 w-4">
+                <p class="text-[12px] font-medium">4.8 <span class="text-popularLight font-light">(2.436 reviews)</span>
+                </p>
+              </div>
+              <!-- grid -->
+              <div class="grid grid-cols-3 gap-y-2 mt-[16px] w-[208px] text-[12px] pb-6 border-b-1 border-[#E0E0E0]">
+                <div class="grid col-start-1 col-end-3">
+                  <div class="flex space-x-1">
+                    <img src="./asset/Most Popular/user.png" alt="" class="shrink-0 aspect-4">
+                    <p>4 Passagers</p>
+                  </div>
+                </div>
+
+                <div class="flex space-x-1">
+                  <img src="./asset/Most Popular/Group.png" alt="" class="shrink-0 aspect-4">
+                  <p>Auto</p>
+                </div>
+
+                <div class="grid col-start-1 col-end-3">
+                  <div class="flex space-x-1">
+                    <img src="./asset/Most Popular/d8wxke_2_.png" alt="" class="shrink-0 aspect-4">
+                    <p>Air Conditioning</p>
+                  </div>
+                </div>
+
+                <div class="flex space-x-1">
+                  <img src="./asset/Most Popular/Group (1).png" alt="" class="shrink-0 aspect-4">
+                  <p>4 Doors</p>
+                </div>
+              </div>
+              <!-- price -->
+              <div class="flex justify-between mt-6">
+                <p>Price</p>
+                <p class="text-popularLight font-light"><strong class="font-bold">$1,800</strong> /day</p>
+              </div>
+              <!-- Button -->
+              <div class="mt-6">
+                <button
+                  class="flex justify-center items-center bg-buttonBg text-whiteBtn w-full py-[15px]  font-medium rounded-xl">Rent
+                  Now
+                  <div class="ml-2">
+                    <svg class="relative -bottom-[1px]" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.025 4.94165L17.0834 9.99998L12.025 15.0583" stroke="white" stroke-width="1.25"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M2.91669 10H16.9417" stroke="white" stroke-width="1.25" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Card 2 -->
+          <div class="flex flex-col w-[256px] py-[26px] px-6 shadow-lFooter rounded-xl">
+            <!-- image container -->
+            <div class="min-h-[104px] flex items-end">
+              <img src="./asset/Most Popular/Audi 1 (1).png" alt="Audi R8 img">
+            </div>
+            <!-- Text container -->
+            <div class="mt-[25px]">
+              <h5 class="text-populatTitle font-medium">Audi R8</h5>
+              <div class="flex items-center space-x-1 mt-[12px]">
+                <img src="./asset/Most Popular/Star 1.png" alt="start img" class="h-4 w-4">
+                <p class="text-[12px] font-medium">4.6<span class="text-popularLight font-light">(1.936 reviews)</span>
+                </p>
+              </div>
+              <!-- grid -->
+              <div class="grid grid-cols-3 gap-y-2 mt-[16px] w-[208px] text-[12px] pb-6 border-b-1 border-[#E0E0E0]">
+                <div class="grid col-start-1 col-end-3">
+                  <div class="flex space-x-1">
+                    <img src="./asset/Most Popular/user.png" alt="" class="shrink-0 aspect-4">
+                    <p>2 Passagers</p>
+                  </div>
+                </div>
+
+                <div class="flex space-x-1">
+                  <img src="./asset/Most Popular/Group.png" alt="" class="shrink-0 aspect-4">
+                  <p>Auto</p>
+                </div>
+
+                <div class="grid col-start-1 col-end-3">
+                  <div class="flex space-x-1">
+                    <img src="./asset/Most Popular/d8wxke_2_.png" alt="" class="shrink-0 aspect-4">
+                    <p>Air Conditioning</p>
+                  </div>
+                </div>
+
+                <div class="flex space-x-1">
+                  <img src="./asset/Most Popular/Group (1).png" alt="" class="shrink-0 aspect-4">
+                  <p>2 Doors</p>
+                </div>
+              </div>
+              <!-- price -->
+              <div class="flex justify-between mt-6">
+                <p>Price</p>
+                <p class="text-popularLight font-light"><strong class="font-bold">$2,100</strong> /day</p>
+              </div>
+              <!-- Button -->
+              <div class="mt-6">
+                <button
+                  class="flex justify-center items-center bg-buttonBg text-whiteBtn w-full py-[15px]  font-medium rounded-xl">Rent
+                  Now
+                  <div class="ml-2">
+                    <svg class="relative -bottom-[1px]" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.025 4.94165L17.0834 9.99998L12.025 15.0583" stroke="white" stroke-width="1.25"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M2.91669 10H16.9417" stroke="white" stroke-width="1.25" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- card 3  -->
+          <div class="flex flex-col w-[256px] py-[26px] px-6 shadow-lFooter rounded-xl">
+            <!-- image container -->
+            <div class="min-h-[104px] flex items-end">
+              <img src="./asset/Most Popular/image 13.png" alt="m3 img">
+            </div>
+            <!-- Text container -->
+            <div class="mt-[25px]">
+              <h5 class="text-populatTitle font-medium">BMW M3</h5>
+              <div class="flex items-center space-x-1 mt-[12px]">
+                <img src="./asset/Most Popular/Star 1.png" alt="start img" class="h-4 w-4">
+                <p class="text-[12px] font-medium">4.5<span class="text-popularLight font-light">(2.036 reviews)</span>
+                </p>
+              </div>
+              <!-- grid -->
+              <div class="grid grid-cols-3 gap-y-2 mt-[16px] w-[208px] text-[12px] pb-6 border-b-1 border-[#E0E0E0]">
+                <div class="grid col-start-1 col-end-3">
+                  <div class="flex space-x-1">
+                    <img src="./asset/Most Popular/user.png" alt="" class="shrink-0 aspect-4">
+                    <p>4 Passagers</p>
+                  </div>
+                </div>
+
+                <div class="flex space-x-1">
+                  <img src="./asset/Most Popular/Group.png" alt="" class="shrink-0 aspect-4">
+                  <p>Auto</p>
+                </div>
+
+                <div class="grid col-start-1 col-end-3">
+                  <div class="flex space-x-1">
+                    <img src="./asset/Most Popular/d8wxke_2_.png" alt="" class="shrink-0 aspect-4">
+                    <p>Air Conditioning</p>
+                  </div>
+                </div>
+
+                <div class="flex space-x-1">
+                  <img src="./asset/Most Popular/Group (1).png" alt="" class="shrink-0 aspect-4">
+                  <p>4 Doors</p>
+                </div>
+              </div>
+              <!-- price -->
+              <div class="flex justify-between mt-6">
+                <p>Price</p>
+                <p class="text-popularLight font-light"><strong class="font-bold">$1,600</strong> /day</p>
+              </div>
+              <!-- Button -->
+              <div class="mt-6">
+                <button
+                  class="flex justify-center items-center bg-buttonBg text-whiteBtn w-full py-[15px]  font-medium rounded-xl">Rent
+                  Now
+                  <div class="ml-2">
+                    <svg class="relative -bottom-[1px]" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.025 4.94165L17.0834 9.99998L12.025 15.0583" stroke="white" stroke-width="1.25"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M2.91669 10H16.9417" stroke="white" stroke-width="1.25" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- card 4  -->
+          <div class="flex flex-col w-[256px] py-[26px] px-6 shadow-lFooter rounded-xl">
+            <!-- image container -->
+            <div class="min-h-[104px] flex items-end">
+              <img src="./asset/Most Popular/image 11.png" alt="Lamborghini Huracan img">
+            </div>
+            <!-- Text container -->
+            <div class="mt-[25px]">
+              <h5 class="text-populatTitle font-medium">Lamborghini Huracan</h5>
+              <div class="flex items-center space-x-1 mt-[12px]">
+                <img src="./asset/Most Popular/Star 1.png" alt="start img" class="h-4 w-4">
+                <p class="text-[12px] font-medium">4.3<span class="text-popularLight font-light">(2.236 reviews)</span>
+                </p>
+              </div>
+              <!-- grid -->
+              <div class="grid grid-cols-3 gap-y-2 mt-[16px] w-[208px] text-[12px] pb-6 border-b-1 border-[#E0E0E0]">
+                <div class="grid col-start-1 col-end-3">
+                  <div class="flex space-x-1">
+                    <img src="./asset/Most Popular/user.png" alt="" class="shrink-0 aspect-4">
+                    <p>2 Passagers</p>
+                  </div>
+                </div>
+
+                <div class="flex space-x-1">
+                  <img src="./asset/Most Popular/Group.png" alt="" class="shrink-0 aspect-4">
+                  <p>Auto</p>
+                </div>
+
+                <div class="grid col-start-1 col-end-3">
+                  <div class="flex space-x-1">
+                    <img src="./asset/Most Popular/d8wxke_2_.png" alt="" class="shrink-0 aspect-4">
+                    <p>Air Conditioning</p>
+                  </div>
+                </div>
+
+                <div class="flex space-x-1">
+                  <img src="./asset/Most Popular/Group (1).png" alt="" class="shrink-0 aspect-4">
+                  <p>2 Doors</p>
+                </div>
+              </div>
+              <!-- price -->
+              <div class="flex justify-between mt-6">
+                <p>Price</p>
+                <p class="text-popularLight font-light"><strong class="font-bold">$2,300</strong> /day</p>
+              </div>
+              <!-- Button -->
+              <div class="mt-6">
+                <button
+                  class="flex justify-center items-center bg-buttonBg text-whiteBtn w-full py-[15px]  font-medium rounded-xl">Rent
+                  Now
+                  <div class="ml-2">
+                    <svg class="relative -bottom-[1px]" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.025 4.94165L17.0834 9.99998L12.025 15.0583" stroke="white" stroke-width="1.25"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M2.91669 10H16.9417" stroke="white" stroke-width="1.25" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Show all button -->
+        <div>
+          <button
+            class="flex justify-center items-center bg-transparent text-popularBtn border-1 border-popularBtn w-auto px-9 py-[15px]  font-medium rounded-xl ">
+            Show all vehicles
+            <div class="h-5 w-5 ml-2 ">
+              <svg class="relative -bottom-[1px]" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.025 4.94165L17.0834 9.99998L12.025 15.0583" stroke="#4E4E4E" stroke-width="1.25"
+                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M2.91669 10H16.9417" stroke="#4E4E4E" stroke-width="1.25" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+
+          </button>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- About us -->
+  <section id="aboutUs" class="flex justify-center">
+    <!-- Container -->
+    <div class="lg:max-h-[864px] mt-[83px] bg-[#F7FBFF] w-full 2xl:container 2xl:margin-auto">
+      <!-- flex container -->
+      <div class="flex flex-col relative overflow-hidden">
+        <!-- button -->
+        <div class="bg-[#ECF5FF] mt-[127px] inline-block px-8 py-4 text-blue-600 mx-auto rounded-xl text-center">
+          <button class="font-semibold ">z</button>
+        </div>
+
+        <!-- title -->
+        <h1 class="max-w-[637px] text-[38px] font-medium text-[#333333] mx-auto mt-6 max-lg:text-center">
+          What people say about us?
+        </h1>
+
+        <!-- carousel container  -->
+        <div class="flex justify-center mb-[127px] mt-20 z-100 max-lg:px-10">
+          <!-- item 1 -->
+          <div class="flex flex-col md:flex-row max-w-[794px] rounded-l-2xl shadow-lFooter ">
+            <!-- image -->
+            <div class="md:w-1/2 w-auto">
+              <img src="./asset/Rectangle 8 (1).png" alt="">
+            </div>
+            <!-- Text content -->
+            <div class="flex flex-col md:w-1/2 p-10 pt-0 max-lg:pb-0 bg-white">
+              <h3 class="text-[64px] flex items-baseline">5.0 <span class="text-2xl">stars</span></h3>
+              <!-- star -->
+              <div class="flex">
+                <img src="./asset/Most Popular/Star 1.png" alt="" class="h-6 w-6">
+                <img src="./asset/Most Popular/Star 1.png" alt="" class="h-6 w-6">
+                <img src="./asset/Most Popular/Star 1.png" alt="" class="h-6 w-6">
+                <img src="./asset/Most Popular/Star 1.png" alt="" class="h-6 w-6">
+                <img src="./asset/Most Popular/Star 1.png" alt="" class="h-6 w-6">
+              </div>
+              <!-- paragraph -->
+              <div class="mt-12 max-lg:mb-4 max-sm:mb-5">
+                <p>“I feel very secure when using caretall's services. Your customer care team is very enthusiastic and
+                  the driver is always on time.”</p>
+              </div>
+              <!-- name -->
+              <div class="lg:mt-20 max-sm:mb-5">
+                <h3 class="text-2xl font-medium ">Charlie Johnson</h3>
+                <p>From New York, US</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- quotation image -->
+        <img src="./asset/“.png" alt="quotation img" class="hidden lg:block absolute w-[292px] h-[310px] top-[90px] left-[10%]">
+        <img src="./asset/right.png" alt="quotation img" class="hidden lg:block absolute w-[292px] h-[310px] -top-[60px] right-[10%]">
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section id="download" >
+    <div class="2xl:container mx-auto relative overflow-hidden">
+      <!-- image -->
+      <img src="./asset/VectorF.png" alt="vector"
+        class="hidden md:block absolute w-[534px] h-[584px] -left-[15%] -top-[20%] 2xl:left-0">
+      <!-- container -->
+      <div class="container m-auto  ">
+        <!-- flex container -->
+        <div class="flex flex-col lg:flex-row px-10 lg:px-auto  items-center justify-between mt-[72px]">
+          <!-- left section -->
+          <div class="flex flex-col max-lg:items-center w-[480px] max-lg:mb-10 px-20 ">
+            <!-- button -->
+            <div class="bg-[#ECF5FF] px-8 py-4 text-blue-600 mx-auto rounded-xl text-center">
+              <button class="font-semibold ">DOWNLOAD</button>
+            </div>
+            <!-- title -->
+            <h1 class=" text-5xl font-semibold text-[#333333] pt-6 leading-[52px] max-lg:text-center">
+              Download Rentcars App for <span class="text-Cblue">FREE</span>
+            </h1>
+            <p class="my-10 max-lg:text-center">For faster, easier booking and exclusive deals.</p>
+            <!-- Download Button Container -->
+            <div class="flex space-x-3">
+              <img src="./asset/google_play.png" alt="google_play_logo" />
+              <img src="./asset/app_store.png" alt="app_store_logo" />
+            </div>
+          </div>
+
+          <!-- right section -->
+          <div>
+            <img src="./asset/iPhone 14 Pro Space Black Mockup.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <!-- container -->
+    <div class="max-2xl:bg-[#051C34]">
+      <div class="container mx-auto px-10 lg:px-auto text-fTextColor 2xl:bg-[#051C34]">
+        <!-- flex container -->
+        <div class="flex flex-col lg:flex-row z-1000 gap-10 lg:gap-30  2xl:gap-60">
+          <!-- left -->
+          <div class="flex flex-col mt-10 max-w-[191px] ">
+            <div class="flex items-center gap-2">
+              <img src="./asset/logo.png" alt="logo-header" />
+              <h3 class="font-semibold text-Cblue">RENTCARS</h3>
+            </div>
+            <div class="flex items-center mt-8 gap-2">
+              <img src="./asset/location.png" alt="location" class="h-6 w-6">
+              <p class="text-sm">25566 Hc 1, Glenallen, Alaska, 99588, USA</p>
+            </div>
+            <div class="flex items-center  mt-6 gap-2">
+              <img src="./asset/call.png" alt="call">
+              <p>+603 4784 273 12</p>
+            </div>
+            <div class="flex items-center  mt-6 gap-2">
+              <img src="./asset/sms.png" alt="sms">
+              <p>rentcars@gmail.com</p>
+            </div>
+          </div>
+          <!-- right -->
+          <div class="flex flex-wrap mt-12 gap-[70px] lg:gap-[96px]">
+            <!-- f-1 -->
+            <div>
+              <h6 class="font-medium">Our Product</h6>
+              <ul class="mt-4 lg:mt-8 space-y-4">
+                <li>Career</li>
+                <li>Car</li>
+                <li>Packages</li>
+                <li>Features</li>
+                <li>Priceline</li>
+              </ul>
+            </div>
+
+            <!-- f-2 -->
+            <div>
+              <h6 class="font-medium">Resources</h6>
+              <ul class="mt-4 lg:mt-8 space-y-4">
+                <li>Download</li>
+                <li>Help Centre</li>
+                <li>Guides</li>
+                <li>Partner Network</li>
+                <li>Cruises</li>
+                <li>Developer</li>
+              </ul>
+            </div>
+
+            <!-- f-2 -->
+            <div>
+              <h6 class="font-medium">About Rentcars</h6>
+              <ul class="mt-4 lg:mt-8  space-y-4">
+                <li>Why choose us</li>
+                <li>Our Story</li>
+                <li>Guides</li>
+                <li>Investor Relations</li>
+                <li>Press Center</li>
+                <li>Advertise</li>
+              </ul>
+            </div>
+
+            <!-- f-4 -->
+            <div>
+              <h6 class="font-medium">Follow Us</h6>
+              <div class="flex mt-4 lg:mt-8 gap-4 ">
+                <img src="./asset/facebook.png" alt="facebook">
+                <img src="./asset/instagram.png" alt="instagram">
+                <img src="./asset/youtube.png" alt="youtube">
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-16 bg-[#575757]">
+        <p class="pt-8 pb-10">Copyright 2023 ・ Rentcars, All Rights Reserved</p>
+      </div>
+
+    </div>
+  </footer>
+
   <!-- Link js -->
   <script src="./script.js"></script>
 </body>
