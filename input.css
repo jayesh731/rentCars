@@ -56,15 +56,17 @@
 
 
 /* Slider */
-.logo-slider {
-    animation: scroll-left 20s linear infinite;
+.slider {
+    animation: slide-left 25s linear infinite;
   }
 
-  @keyframes scroll-left {
+  @keyframes slide-left {
     0% {
-      transform: translateX(0);
+      transform: translateX(0%);
     }
     100% {
       transform: translateX(-50%);
     }
   }
+
+
