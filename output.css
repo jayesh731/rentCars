@@ -416,6 +416,9 @@
   .h-\[43px\] {
     height: 43px;
   }
+  .h-\[66px\] {
+    height: 66px;
+  }
   .h-\[310px\] {
     height: 310px;
   }
@@ -424,9 +427,6 @@
   }
   .h-\[866px\] {
     height: 866px;
-  }
-  .min-h-\[96px\] {
-    min-height: 96px;
   }
   .min-h-\[104px\] {
     min-height: 104px;
@@ -499,9 +499,6 @@
   }
   .max-w-\[794px\] {
     max-width: 794px;
-  }
-  .min-w-56 {
-    min-width: calc(var(--spacing) * 56);
   }
   .min-w-\[161px\] {
     min-width: 161px;
